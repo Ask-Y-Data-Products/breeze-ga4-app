@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Executive from './pages/Executive';
+import Segments from './pages/Segments';
 import Experiments from './pages/Experiments';
 import PaidMedia from './pages/PaidMedia';
 import Funnel from './pages/Funnel';
@@ -16,6 +17,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Executive />} />
+        <Route path="segments" element={<Segments />} />
         <Route path="experiments" element={<Experiments />} />
         <Route path="paid-media" element={<PaidMedia />} />
         <Route path="funnel" element={<Funnel />} />

@@ -8,6 +8,7 @@ import { exportPageAsHtml } from '../lib/export';
 // Admin topics (Learn, Data Quality, Settings) live under Management to keep this list short.
 const NAV = [
   { to: '/', label: 'Executive', icon: '◆' },
+  { to: '/segments', label: 'Segments', icon: '◈' },
   { to: '/experiments', label: 'Experiments', icon: '⚗︎' },
   { to: '/paid-media', label: 'Paid Media', icon: '◉' },
   { to: '/funnel', label: 'Funnel', icon: '▽' },
@@ -18,6 +19,7 @@ const NAV = [
 // Pathname → user-facing report title, used when the user exports a page.
 const PAGE_TITLES: Record<string, string> = {
   '/': 'Executive Summary',
+  '/segments': 'Segments',
   '/experiments': 'Experiments',
   '/paid-media': 'Paid Media',
   '/funnel': 'Funnel Analysis',
