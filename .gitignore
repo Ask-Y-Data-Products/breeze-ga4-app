@@ -5,8 +5,9 @@ node_modules/
 dist/
 *.tsbuildinfo
 
-# Deploy artifact (regenerated from `npm run build && cd dist && zip -rq ../ga4-app-deploy.zip .`)
-ga4-app-deploy.zip
+# Note: ga4-app-deploy.zip IS committed so people can download the built
+# artifact directly from the GitHub repo without installing Node. Rebuild
+# with: `npm run build && cd dist && zip -rq ../ga4-app-deploy.zip .`
 
 # OS
 .DS_Store
